@@ -1,0 +1,28 @@
+.button{
+  margin-top: 10%;
+  height: 6vh;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: #835afd;
+  color:#fff;
+  padding: 0 4%;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  transition: 0.2s;
+
+  img {
+    margin-right: 4%;
+  }
+
+  &:not(:disabled){
+    filter:brightness(0.9);
+  }
+
+  &:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
